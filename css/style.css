@@ -1,22 +1,176 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1222px;
+    margin: auto;
+}
+
 .main {
     margin: auto;
     background: url(../img/slider_img_201.jpg) center no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     width: 1366px;
-    height: 880px;
+    height: 800px;
 }
 
-/* .nav, .container {
+.wrap-header {
+    background: #F0F0F0;
     width: 1366px;
-} */
+    margin: auto;
+}
+
+.wrap-header:hover {
+    background-color: #F9F9F9;
+}
 
 .header {
     display: flex;
     justify-content: space-between;
     padding-top: 63px;
+    flex-wrap: nowrap;
+    width: 1222px;
+    height: 90px;
+    margin: auto;
+    background: #F0F0F0;
+    /* padding-bottom: 250px; */
+}
+
+.header:hover {
+    background-color: #F9F9F9;
 }
 
 .logo-nav {
     width: 185px;
     height: 22px;
 }
+
+.nav-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* стили для меню */
+
+.menu-main {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+
+.menu-main li {
+    display: inline-block;
+}
+
+.menu-main li:after {
+    /* content: "|"; */
+    color: #8c8c8c;
+    display: inline-block;
+    /* vertical-align: top; */
+}
+
+.menu-main li:last-child:after {
+    content: none;
+}
+
+.menu-main a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    position: relative;
+    /* padding-bottom: 20px; */
+    margin: 0 20px 0 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+
+.menu-main a, .menu-main a:visited {
+    color: #8c8c8c;
+}
+
+.menu-main a.current, .menu-main a:hover {
+    color: #212121;
+}
+
+.menu-main a:before, .menu-main a:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #212121;
+    transition: .8s;
+}
+
+.menu-main a:hover:before, .menu-main .current:before {
+    left: 0;
+}
+
+.menu-main a:hover:after, .menu-main .current:after {
+    right: 0;
+}
+
+/* блок hero */
+.hero {
+    margin-top: 240px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #43a047;
+}
+
+.hero-title {
+    font-size: 62px;
+    line-height: 72px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #212121;
+    margin: 10px 0 30px 0;
+}
+
+.hero-description {
+    max-width: 480px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #6c6c6c;
+    padding-bottom: 30px;
+}
+
+.hero-button {
+    box-shadow: 0px 2px 5px 0px rgba(33, 33, 33, 0.34);
+    width: 220px;
+    height: 53px;
+    background-color: #ffffff;
+    border-radius: 22.5px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #212121;
+    border: none;
+}
+
+/* 
+@media (max-width: 550px) {
+    .menu-main {
+        padding-top: 0;
+    }
+    .menu-main li {
+        display: block;
+    }
+    .menu-main li:after {
+        content: none;
+    }
+} */

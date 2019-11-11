@@ -1,8 +1,44 @@
-body {
-    font-family: 'Ubuntu', sans-serif;
+* {
+    box-sizing: border-box;
+    background-color: #f8f8f8;
 }
 
-.nav {
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* margin: auto; */
+    max-width: 1200px;
+    height: 60px;
+}
+
+/* контейнер для логотипа */
+
+.logo {
+    width: 150px;
+    padding: 5px 5px;
+}
+
+.logo__img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+    /* background-color: #eaeaea; */
+}
+
+p, .link {
+    color: #707070;
+}
+
+.nav, h1 {
     text-align: center;
 }
 
@@ -11,16 +47,35 @@ ul.nav__menu li {
     padding: 0 20px;
 }
 
+li {
+    list-style-type: none;
+    /* Убираем маркеры */
+}
+
+ul {
+    padding-left: 0;
+    /* Сдвигаем список влево */
+}
+
 a {
     text-decoration: none;
+    color: #205586;
 }
 
-h1 {
-    text-align: center;
+a:hover {
+    color: #ff0000;
+    /*цвет ссылки при наведении мыши*/
 }
+
+a:active {
+    color: #497DDD;
+    /* border-bottom: 1px dashed; */
+}
+
+/* параметры для тела страницы */
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     min-height: 680px;
     margin: auto;
 }
@@ -55,7 +110,8 @@ h1 {
 }
 
 .catalog__link {
-    text-align: center;
+    padding: 10px 0;
+    /* text-align: center; */
 }
 
 .product {
@@ -73,6 +129,63 @@ h1 {
 
 .product-box__img {
     width: 100%;
+}
+
+.product-description__short {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.link {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.product-description__long {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+/*Внешняя граница таблицы*/
+
+table {
+    width: 400px;
+    height: 150px;
+    border-collapse: collapse;
+    color: #484343;
+}
+
+/*Границы для ячеек таблицы*/
+
+td {
+    border: 1px solid rgb(139, 139, 139);
+    text-align: center;
+}
+
+/* Кнопки */
+
+.button {
+    background-color: rgb(255, 51, 119);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 15px 40px;
+    /* text-align: center; */
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 18px;
+    transition-duration: 0.4s;
+}
+
+/* наведение на кнопку */
+.button:hover {
+    background-color: rgb(210, 2, 218); /* Green */
+    color: white;
 }
 
 .contacts {
@@ -106,6 +219,81 @@ h1 {
 .form-text__input {
     width: 300px;
     height: 30px;
+    transform: capitalize;
+}
+
+input[type="text"] {
+    border: 1px solid #98baba;
+    /* Параметры рамки */
+    background: transparent;
+    /* Прозрачный фон */
+    padding: 1px 4px;
+    /* Поля вокруг текста */
+    color: rgb(24, 23, 23);
+    /* Цвет текста внутри полей*/
+}
+
+.form-text__input {
+    text-transform: capitalize;
+}
+
+.form-text__mail[placeholder] {
+    color: #F8F8F8;
+}
+
+/*стили для разных браузеров*/
+
+input[type="text"]::-webkit-input-placeholder {
+    color: #b5c9c7;
+    font-style: italic;
+}
+
+input[type="text"]:-ms-input-placeholder {
+    color: #b5c9c7;
+    font-style: italic;
+}
+
+input[type="text"]::-ms-input-placeholder {
+    color: #b5c9c7;
+    font-style: italic;
+}
+
+input[type="text"]::placeholder {
+    color: #b5c9c7;
+    font-style: italic;
+}
+
+textarea[type="text"] {
+    border: 1px solid #98baba;
+    /* Параметры рамки */
+    background: transparent;
+    /* Прозрачный фон */
+    padding: 1px 4px;
+    /* Поля вокруг текста */
+    color: rgb(24, 23, 23);
+    /* Цвет текста внутри полей*/
+}
+
+/*стили для разных браузеров*/
+
+textarea[type="text"]::-webkit-input-placeholder {
+    color: #b5c9c7;
+    font-style: italic;
+}
+
+textarea[type="text"]:-ms-input-placeholder {
+    color: #b5c9c7;
+    font-style: italic;
+}
+
+textarea[type="text"]::-ms-input-placeholder {
+    color: #b5c9c7;
+    font-style: italic;
+}
+
+textarea[type="text"]::placeholder {
+    color: #b5c9c7;
+    font-style: italic;
 }
 
 .form__button {
@@ -113,17 +301,26 @@ h1 {
     width: 180px;
     height: 40px;
     color: white;
-    background-color:#205586;
+    background-color: #205586;
     border: none;
     border-radius: 6px;
 }
 
-.footer {
-    text-align: center;
-    padding: 20px;
+footer {
+    height: 100px;
+    background-color: #12325f;
 }
 
-/* .footer {
-    padding: 20px 0;
-} */
+.footer {
+    max-width: 1200px;
+    margin: auto;
+    /* height: 100px; */
+    background-color: #12325f;
+}
 
+.footer-content {
+    float: right;
+    padding: 20px 5px;
+    background-color: #12325f;
+    color: #F8F8F8;
+}

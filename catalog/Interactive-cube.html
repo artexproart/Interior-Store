@@ -10,14 +10,23 @@
 </head>
 
 <body>
-    <div class="nav">
-        <ul class="nav__menu">
-            <li><a href="/index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="/contacts.html">Контакты</a></li>
-        </ul>
-    </div>
-    <!-- /.nav -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="../img/logo-tree.png" alt="Логотип" class="logo__img">
+            </a>
+        </div>
+        <!-- /.logo -->
+        <div class="nav">
+            <ul class="nav__menu">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../catalog.html">Каталог</a></li>
+                <li><a href="../contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        <!-- /nav menu -->
+    </header>
+    <!-- /header -->
     <hr>
     <div class="container">
         <h1>Интерактивный куб &laquo;Играй и&nbsp;учись&raquo;</h1>
@@ -32,24 +41,50 @@
             </div>
             <div class="product-card">
                 <h3>Описание</h3>
-                <p>Возможности для игры и&nbsp;исследований с&nbsp;пятью сторонами интерактивного куба. Ребенок будет
+                <p class="product-description__short">Возможности для игры и&nbsp;исследований с&nbsp;пятью сторонами
+                    интерактивного куба. Ребенок будет
                     передвигать,
                     нажимать, вращать, крутить элементы куба, одновременно изучая цвета, цифры, животных и&nbsp;многое
                     другое.</p>
                 <h3>Характеристики</h3>
-                <ul>
+                <div class="table">
+                    <table>
+                        <tr>
+                            <td>1.1</td>
+                            <td>1</td>
+                            <td colspan="2">2</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">1.2</td>
+                            <td>Цвет</td>
+                            <td>Красный</td>
+                            <td>Синий</td>
+                        </tr>
+                        <tr>
+                            <td>Размер</td>
+                            <td>Большой</td>
+                            <td>Маленький</td>
+                        </tr>
+                        <tr>
+                            <td>Вес</td>
+                            <td>Тяжёлый</td>
+                            <td>Лёгкий</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /.table -->
+                <ul class="link">
                     <li>6 веселых функций</li>
                     <li>5 подсвечивающихся клавиш пианино знакомят с&nbsp;цифрами, цветами и&nbsp;музыкой</li>
                     <li>подвижные страницы книги на&nbsp;корпусе куба с&nbsp;воспроизведением стихов</li>
                     <li>сортер для фигур на&nbsp;одной из&nbsp;сторон куба</li>
                     <li>обучает животным и&nbsp;объектам</li>
                     <li>различные развлекательные функции</li>
-                    <li>воспроизведение 4 песенок и&nbsp;10&nbsp;мелодий</li>
-                    <li>5 развлекательных сторон куба, 2 из&nbsp;которых&nbsp;&mdash; интерактивные</li>
-                    <li>в&nbsp;совокупности включает 75+ мелодий, песен, звуков и&nbsp;фраз</li>
-                    <li>контроль громкости для более тихой игры</li>
                 </ul>
-                <p>Куб полностью русифицирован. Он&nbsp;развивает навыки моторики, зрительную координацию, слух.</p>
+                <h3>Подробное описание</h3>
+                <p class="product-description__long">Куб полностью русифицирован. Он&nbsp;развивает навыки моторики,
+                    зрительную координацию, слух.</p>
+                <button class="button">Заказать</button>
             </div>
         </div>
         <!-- /.product -->

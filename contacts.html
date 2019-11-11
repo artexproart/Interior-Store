@@ -10,14 +10,23 @@
 </head>
 
 <body>
-    <div class="nav">
-        <ul class="nav__menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog/catalog.html">Каталог</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
-    </div>
-    <!-- /.nav -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo-tree.png" alt="Логотип" class="logo__img">
+            </a>
+        </div>
+        <!-- /.logo -->
+        <div class="nav">
+            <ul class="nav__menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <!-- /nav menu -->
+    </header>
+    <!-- /header -->
     <hr>
     <h1>Напишите нам</h1>
     <div class="container contacts">
@@ -30,20 +39,22 @@
                 </div>
                 <div class="form-block">
                     <span class="form-text">Email</span>
-                    <input class="form-text__input" type="text" placeholder="ваш email">
+                    <input class="form-text__input form-text__mail" type="text" placeholder="ваш email">
                 </div>
                 <div class="form-block">
                     <span class="form-text">Тема</span>
-                    <textarea class="form-text__input" placeholder="напр: Хочу скидку"></textarea>
+                    <textarea class="form-text__input" type="text" placeholder="напр: Хочу скидку"></textarea>
                 </div>
                 <div class="form-block">
                     <span class="form-text">Ваше сообщение</span>
-                    <textarea class="form-text__input" placeholder="текст вашего сообщения"></textarea>
+                    <textarea class="form-text__input" type="text" placeholder="текст вашего сообщения"></textarea>
                 </div>
+                <!-- поля формы -->
                 <div class="form-block form-block__button">
                     <input class="form__button" type="submit" value="Отправить">
                     <input class="form__button" type="reset" value="Очистить">
                 </div>
+                <!-- кнопки формы -->
             </form>
             <!-- /.form -->
         </div>

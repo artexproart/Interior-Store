@@ -247,9 +247,10 @@ a {
 }
 
 .promo-content__wrap {
+    margin: auto;
     margin-top: 200px;
     margin-left: 50px;
-    width: 683px;
+    width: 630px;
 }
 
 .promo-subtitle {
@@ -278,6 +279,7 @@ a {
 }
 
 /* блок trending */
+
 .trending {
     padding-bottom: 120px;
 }
@@ -375,13 +377,10 @@ a {
     background: url(../img/product_1_lg_66.jpg);
 }
 
-/* ****************** */
-
 .exclusive-content__wrap {
     margin-top: 125px;
     margin-left: 30px;
     width: 683px;
-    /* display: none; */
 }
 
 .exclusive-subtitle {
@@ -409,8 +408,6 @@ a {
     padding-bottom: 30px;
 }
 
-/* ***************** */
-
 .exclusive__right-wrap {
     display: flex;
     justify-content: space-around;
@@ -421,15 +418,113 @@ a {
     padding: 15px;
 }
 
-/* 
-@media (max-width: 550px) {
-    .menu-main {
-        padding-top: 0;
-    }
-    .menu-main li {
-        display: block;
-    }
-    .menu-main li:after {
-        content: none;
-    }
-} */
+.mobile {
+    width: 1366px;
+    height: 516px;
+    margin: auto;
+    background: url(../img/back_img_44.jpg);
+}
+
+.mobile-wrap {
+    padding-top: 110px;
+    margin-left: 100px;
+}
+
+.mobile-subtitle {
+    font-size: 18px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6c6c6c;
+}
+
+.mobile-title {
+    font-size: 62px;
+    line-height: 72px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #212121;
+    margin: 0;
+}
+
+.modile-icon {
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.mobile-description {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #6c6c6c;
+}
+
+footer {
+    margin: auto;
+    width: 1366px;
+    height: 384px;
+    background-color: #F7F7F7;
+}
+
+.footer-content__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.footer-content__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-link__title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6c6c6c;
+}
+
+.content-link__addres {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #212121;
+}
+
+.content-link__color {
+    color: #F7F7F7;
+}
+
+.content-link__text {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #212121;
+    margin: 0;
+}
+
+.content-botton__text {
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6c6c6c;
+}
+
+.content-link__input {
+    width: 390px;
+    height: 50px;
+    background-image: url(../img/fl.png);
+    background-repeat: no-repeat;
+    padding-left: 23px;
+    border: 0.5px solid rgb(190, 190, 190);
+    background-position: 350px 15px;
+}

@@ -19,6 +19,13 @@ a {
     height: 800px;
 }
 
+.main-product {
+    margin: auto;
+    background-color: #f5f5f5;
+    width: 1366px;
+    height: 360px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -28,6 +35,10 @@ a {
     height: 90px;
     margin: auto;
     background: #F0F0F0;
+}
+
+.header-product {
+    background-color: #f5f5f5;
 }
 
 .header:hover {
@@ -106,10 +117,34 @@ a {
     right: 0;
 }
 
+.product-nav__link a {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #212121, #6c6c6c;
+}
+
+.product-wrap__menu {
+    padding: 70px 0;
+}
+
 /* блок hero */
 
 .hero {
     margin-top: 240px;
+}
+
+.hero-product {
+    margin-top: 150px;
+}
+
+.hero-product__title {
+    font-size: 62px;
+    line-height: 72px;
+    font-weight: 100;
+    color: #212121;
 }
 
 .hero-subtitle {
@@ -244,6 +279,7 @@ a {
 
 .promo-content__right {
     background: url(../img/promo_img_132.jpg);
+    background-size: 100%;
 }
 
 .promo-content__wrap {
@@ -316,6 +352,13 @@ a {
 
 .trending-card__box {
     margin: 20px 0;
+}
+
+.product-round {
+    margin-left: 50%;
+    margin-right: 50%;
+    padding-top: 50px;
+    /* padding-bottom: 20px; */
 }
 
 /* блок hot */

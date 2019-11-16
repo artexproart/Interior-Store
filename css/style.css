@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,700&display=swap');
-
 @font-face {
     font-family: 'Gotham Pro Light';
     src: url('../fonts/GothamPro-Light.eot');
@@ -205,6 +204,10 @@ a {
     color: #212121;
     border: none;
     transition: 0.7s;
+}
+
+.arrow {
+    margin-left: 18px;
 }
 
 .hero-button:hover {
@@ -628,6 +631,9 @@ a {
     color: #ffffff;
     margin: auto;
 }
+.showroom-arrow {
+    vertical-align: bottom;
+}
 
 .showroom-content__description__top {
     padding-top: 40px;
@@ -721,13 +727,19 @@ a {
 footer {
     margin: auto;
     max-width: 1366px;
-    height: 384px;
+    min-height: 384px;
     background-color: #F7F7F7;
+}
+
+.content-link {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer-content__top {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 80px;
     padding-bottom: 50px;
 }
@@ -794,8 +806,26 @@ footer {
     .hot-wrap {
         padding-top: 250px;
     }
+    .exclusive {
+        padding: 120px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .featured-product {
+        justify-content: space-around;
+    }
     .trending {
         padding-bottom: 120px;
+    }
+    .footer-content__top {
+        justify-content: center;
+    }
+    .promo-content__left {
+        margin: 10px;
+    }
+    .promo-content__right {
+        margin: 10px;
     }
 }
 
@@ -813,17 +843,15 @@ footer {
     .promo-content__wrap {
         padding: 0 50px;
     }
-    footer {
-        height: 930px;
-    }
     .footer-content__top {
-        flex-direction: column;
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
         padding-left: 50px;
         /* align-items: center; */
     }
     .footer-content__bottom {
         flex-direction: column;
-        align-items: flex-start;
+        /* align-items: flex-start; */
         padding-left: 50px;
     }
     .main-product {

@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,700&display=swap');
+
+@font-face {
+    font-family: 'Gotham Pro Light';
+    src: url('../fonts/GothamPro-Light.eot');
+    src: url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Light.woff') format('woff'), url('../fonts/GothamPro-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -624,6 +634,7 @@ a {
 }
 
 .showroom-content__description {
+    font-family: 'Gotham Pro Light', sans-serif;
     font-size: 16.1px;
     line-height: 24px;
     font-weight: 300;

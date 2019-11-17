@@ -17,6 +17,10 @@ body {
 
 a {
     text-decoration: none;
+    outline: none;
+}
+button {
+    outline: none;
 }
 
 .container {
@@ -146,6 +150,32 @@ a {
     padding: 70px 0;
 }
 
+/* всплывающее меню под hero */
+
+.bar {
+    position: relative;
+    height: 1px;
+    max-width: 1366px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.bar-hover {
+    position: absolute;
+    margin-top: -77px;
+    padding-top: 30px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    width: 1384px;
+    height: 78px;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.bar-hover:hover {
+    opacity: 1;
+}
+
 /* блок hero */
 
 .hero {
@@ -203,7 +233,7 @@ a {
     letter-spacing: 0.2em;
     color: #212121;
     border: none;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 .arrow {
@@ -285,6 +315,53 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.featured-product__card {
+    position: relative;
+    width: 270px;
+    height: 270px;
+    margin: 10px 0;
+}
+
+.product__card-hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border: 1.0px solid #9c9c9c;
+    text-align: center;
+}
+
+a .product__card-hover:hover {
+    opacity: 0.9;
+}
+
+.card-hover__round {
+    margin-top: 60px;
+}
+
+.card-hover__arrow {
+    margin-top: 10px;
+}
+
+.card-hover__title {
+    margin-top: 13px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 700;
+    color: #212121;
+}
+
+.card-hover__subtitle {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #6c6c6c;
 }
 
 .promo {
@@ -599,7 +676,7 @@ a {
 }
 
 .showroom-content__prise {
-    font-size: 36.1;
+    font-size: 36.1px;
     line-height: 48px;
     font-weight: 300;
     text-transform: uppercase;
@@ -631,6 +708,7 @@ a {
     color: #ffffff;
     margin: auto;
 }
+
 .showroom-arrow {
     vertical-align: bottom;
 }
@@ -648,9 +726,9 @@ a {
     color: #212121;
 }
 
-.str {
+/* .str {
     height: 100px;
-}
+} */
 
 /* Контент страницы Contact */
 
@@ -827,6 +905,9 @@ footer {
     .promo-content__right {
         margin: 10px;
     }
+    .bar-hover {
+        width: -webkit-fill-available;
+    }
 }
 
 @media only screen and (max-width: 980px) {
@@ -869,6 +950,9 @@ footer {
     .showroom-menu {
         height: 120px;
     }
+    .bar-hover {
+        height: 145px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -883,5 +967,8 @@ footer {
     }
     .hot-wrap {
         padding-top: 150px;
+    }
+    .bar-hover {
+        height: 200px;
     }
 }
